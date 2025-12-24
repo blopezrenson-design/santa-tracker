@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrivée du Père Noël 🎅</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<header>
+  🎅 Arrivée du Père Noël
+</header>
+
+<main>
+  <section class="controls">
+    <h2>Choisis le lieu et l’heure</h2>
+
+    <label>Heure d’arrivée</label>
+    <input type="time" id="heure">
+
+    <button id="valider">Valider</button>
+    <p id="message"></p>
+  </section>
+
+  <section id="map"></section>
+</main>
+
+<div id="neige"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
