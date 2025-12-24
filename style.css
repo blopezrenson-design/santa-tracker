@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#b30000, #ffffff);
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.controls {
+  padding: 20px;
+  text-align: center;
+}
+
+.controls h2 {
+  margin-bottom: 10px;
+}
+
+.controls input,
+.controls button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.controls button {
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #8f0000;
+}
+
+#map {
+  height: 400px;
+}
+
+/* Neige */
+#neige::after {
+  content: "❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  animation: neige 10s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes neige {
+  from { transform: translateY(-100px); }
+  to { transform: translateY(100vh); }
+}
